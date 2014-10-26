@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<bcv.svs.GLLayer android:id="@+id/renderer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+    
+	<bcv.svs.DrawSquare android:id="@+id/drawsquare"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+		
+    <TextView
+        android:id="@+id/fpsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FF0000"
+        android:text="sup" />
+    <TextView
+        android:id="@+id/main_console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fpsText"
+        android:textColor="#FFFFFF"
+        android:text="" />       
+    <TextView
+        android:id="@+id/gmmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_console"
+        android:textColor="#FF0000"
+        android:text="" />
+    <ImageButton
+        android:id="@+id/object_learn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"        
+        android:visibility="invisible"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:maxWidth="180dp"        
+        android:background="@null"
+        android:src="@drawable/button_learn1" />
+    <!-- ================================================================== -->
+	<!-- 	this is for the GMM parameters / visualizations.	 		    -->
+    <!-- ================================================================== -->
+    
+    <RelativeLayout
+       android:id="@+id/gmm_layout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true">
+	   <RelativeLayout
+		   android:id="@+id/gmm_fg_layout"
+		   android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentLeft="true">
+		    <TextView
+		        android:id="@+id/gmm_fg_text"		        
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:textColor="#FFFFFF"
+		        android:text="" />
+		    <RelativeLayout
+		        android:id="@+id/gmm_fg_data"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/gmm_fg_text" />
+	   </RelativeLayout>
+	   <RelativeLayout
+       	   android:id="@+id/gmm_bg_layout"	       
+		   android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@+id/gmm_fg_layout"
+	       android:layout_alignParentLeft="true">
+		    <TextView
+		        android:id="@+id/gmm_bg_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:textColor="#FFFFFF"
+		        android:text="" />
+		    <RelativeLayout
+		        android:id="@+id/gmm_bg_data"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/gmm_bg_text" />
+		    		    
+		 </RelativeLayout>
+	   		    
+    </RelativeLayout>       
+    
+</RelativeLayout>

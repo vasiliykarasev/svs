@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">slic video segmentation</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">slic video segmentation</string>
+    
+
+</resources>

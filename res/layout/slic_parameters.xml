@@ -1,0 +1,98 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/slic_K_text"
+            android:text="# superpixels"
+            android:textSize="20sp"
+            android:width="150dp" />
+        <EditText
+        android:id="@+id/slic_K"
+        android:inputType="number"    
+        android:maxLines="1"   
+        android:gravity="right"
+        android:imeOptions="actionDone"
+        android:minWidth="100sp"
+        android:text="500"
+        android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/slic_M_text"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="geometric weight"/>
+         <EditText
+        android:id="@+id/slic_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:minWidth="100sp"
+        android:text="5" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/slic_num_iters_text"
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="num iterations"/>
+         <EditText
+        android:id="@+id/slic_num_iters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLines="1"       
+        android:minWidth="100sp"
+        android:imeOptions="actionDone"                 
+        android:text="5" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/slic_show_bdry_text"
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="show boundary"/>
+        <CheckBox
+            android:id="@+id/slic_show_bdry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="show graph edges"/>
+        <CheckBox
+            android:id="@+id/slic_show_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="" />
+    </TableRow>
+</TableLayout>

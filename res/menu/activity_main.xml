@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_reset"
+        android:title="Reset"/>        
+    
+    <item android:id="@+id/menu_camera_menu"
+        android:title="Camera Menu...">
+	    <menu>
+	    <item android:id="@+id/menu_set_resolution"
+	        android:title="Set Camera Resolution...">
+		    <menu>
+		    <item android:id="@+id/menu_res_176x144"
+		        android:title="176 x 144"/>
+		    <item android:id="@+id/menu_res_320x240"
+		        android:title="320 x 240"/>
+		    <item android:id="@+id/menu_res_640x480"
+		        android:title="640 x 480"/>	    		    
+			<item android:id="@+id/menu_fullscreen" 
+	    		android:title="Set fullscreen" 
+	    		android:checkable="true"
+	    		android:checked="false" />		    
+			</menu>
+		</item>
+	    <item android:id="@+id/menu_lock_exposure"
+	        android:title="Reset Exposure Lock"/>
+	    </menu>
+    </item>
+    <item android:id="@+id/menu_slic"
+        android:title="SLIC..."/>
+    <item android:id="@+id/menu_segmentation"
+        android:title="Segmentation..."/>
+</menu>

@@ -1,0 +1,131 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/segmentation_K_text"
+            android:text="# clusters"
+            android:textSize="20sp"
+            android:width="150dp" />
+        <EditText
+        android:id="@+id/segmentation_K"
+        android:inputType="number"    
+        android:maxLines="1"   
+        android:gravity="right"
+        android:imeOptions="actionDone"
+        android:minWidth="100sp"
+        android:text="500"
+        android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:id="@+id/segmentation_num_iters_text"
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="num iterations"/>
+         <EditText
+        android:id="@+id/segmentation_num_iters"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLines="1"  
+        android:gravity="right"             
+        android:minWidth="100sp"
+        android:imeOptions="actionDone"                 
+        android:text="50" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="TV weight"/>
+         <EditText
+             android:id="@+id/segmentation_tv"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:imeOptions="actionDone"
+             android:inputType="numberDecimal"
+             android:maxLines="1"
+             android:minWidth="100sp"
+             android:text="1.0" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="temporal weight"/>
+         <EditText
+             android:id="@+id/segmentation_wt"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:imeOptions="actionDone"
+             android:inputType="numberDecimal"
+             android:maxLines="1"
+             android:minWidth="100sp"
+             android:text="1.0" />
+    </TableRow>    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="beta"/>
+         <EditText
+             android:id="@+id/segmentation_beta"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:imeOptions="actionDone"
+             android:inputType="numberDecimal"
+             android:maxLines="1"
+             android:minWidth="100sp"
+             android:text="1.0" />
+    </TableRow>            
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" > 
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="do segmentation"/>
+         <CheckBox
+             android:id="@+id/segmentation_do"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:maxLines="1" />
+    </TableRow>             
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >          
+        <TextView
+            android:width="150dp"
+            android:textSize="20sp"
+            android:text="show unary potential"/>
+         <CheckBox
+             android:id="@+id/segmentation_show_unary"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:checked="false"
+             android:maxLines="1" />         
+    </TableRow>    
+ -->
+</TableLayout>
