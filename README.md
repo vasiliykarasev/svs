@@ -22,6 +22,9 @@ How to compile
 
 compile it with eclipse
 
+bugs
+=============
+there are MANY. time permitting, they will be caught.
 
 about
 ==============
